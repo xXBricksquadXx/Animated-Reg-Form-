@@ -60,13 +60,14 @@ section {
 }
 
 section h2 {
+  color: #ffcd00;
   font-size: 2.5em;
   margin-bottom: 20px;
   margin-right: 75px;
   padding-right: 50px;
   position: relative;
   text-align: center;
-  text-shadow: 3px 3px #ccc;
+  text-shadow: 3px 4px #000;
 }
 
 section div {
@@ -102,8 +103,8 @@ button {
 /* 'hover' and 'focus' should be used together for accessibility ♿ */
 button:focus,
 button:hover {
-  background-color: rgb(102, 100, 100);
-  color: #fff;
+  background-color: #ffcd00;
+  color: #000;
   cursor: pointer;
 }
 
