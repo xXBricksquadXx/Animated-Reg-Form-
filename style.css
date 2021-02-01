@@ -17,10 +17,14 @@
 }
 
 .banner #text {
-  color: #ffcd00;
+  background: url(./assets/Benjamins.jpg);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
   font-size: 12em;
   position: relative;
-  text-shadow: 3px 3px #000;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 
 .banner .clouds {
