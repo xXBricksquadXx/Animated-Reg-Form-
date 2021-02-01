@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  align-items: center;
+  background-image: url(https://www.wallpapers4u.org/wp-content/uploads/atlanta_usa_georgia_metropolis_skyscrapers_night_30789_1920x1080.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.banner #text {
+  color: #ccc;
+  font-size: 12em;
+  position: relative;
+  text-shadow: 3px 3px #000;
+}
+
+.banner .clouds {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.banner .clouds img {
+  animation: animate calc(3s * var(--i)) linear infinite;
+  bottom: 0;
+  max-width: 100%;
+  position: absolute;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+
+section {
+  padding: 75px 100px;
+  position: relative;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin-right: 75px;
+  padding-right: 50px;
+  position: relative;
+  text-align: center;
+  text-shadow: 3px 3px #ccc;
+}
+
+section div {
+  margin: 0.5rem 0;
+}
+
+input {
+  padding: 2px;
+}
+
+input,
+button {
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #000;
+  border: none;
+  color: whitesmoke;
+  margin-right: 130px;
+  margin-top: 1rem;
+  max-width: 96px;
+  padding: 0.5rem;
+
+  /* Transition all properties over 0.2s using an 'ease' timing function. */
+  transition: all 0.2s ease;
+}
+
+/* 'hover' and 'focus' should be used together for accessibility ♿ */
+button:focus,
+button:hover {
+  background-color: rgb(102, 100, 100);
+  color: #fff;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--justify-between {
+  justify-content: space-around;
+}
+
+.card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+
+  /* top/bottom 0, and left/right automatically centered */
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 1rem;
+}
+
+.rounded {
+  /* Rounded corners */
+  border-radius: 0.75rem;
+}
+
+/* Copied/pasted from CSS Tricks */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+/* JS 'State' Classes */
+.is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: initial;
+}

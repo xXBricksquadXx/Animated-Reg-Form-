@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Realistic Clouds Parrallax Banner</title>
+  </head>
+  <body>
+    <div class="banner">
+      <h2 id="text">Bricksquad Monopoly</h2>
+      <div class="clouds">
+        <img src="assets/cloud1.png" style="--i: 1" />
+        <img src="assets/cloud2.png" style="--i: 2" />
+        <img src="assets/cloud3.png" style="--i: 3" />
+        <img src="assets/cloud4.png" style="--i: 3" />
+        <img src="assets/cloud5.png" style="--i: 5" />
+        <img src="assets/cloud1.png" style="--i: 10" />
+        <img src="assets/cloud2.png" style="--i: 9" />
+        <img src="assets/cloud3.png" style="--i: 8" />
+        <img src="assets/cloud4.png" style="--i: 7" />
+        <img src="assets/cloud5.png" style="--i: 6" />
+      </div>
+    </div>
+    <section>
+      <h2>Registration Form</h2>
+
+      <form class="card flex flex--column rounded">
+        <div>
+          <!-- 'for' attribute should match up with an id attribute for the corresponding input -->
+          <label class="screen-reader-text" for="fname">First Name:</label>
+          <input type="text" id="fname" placeholder="First Name" />
+          <p class="is-hidden">First name is required!</p>
+        </div>
+
+        <div>
+          <label class="screen-reader-text" for="lname">Last Name:</label>
+          <input type="text" id="lname" placeholder="Last Name" />
+          <p class="is-hidden">Last name is required!</p>
+        </div>
+
+        <div>
+          <label class="screen-reader-text" for="email">Email: </label>
+          <input type="email" id="email" placeholder="✉️" />
+          <p class="is-hidden">This doesn't look like an ✉️ address</p>
+        </div>
+
+        <div>
+          <label class="screen-reader-text" for="phone">☎️:</label>
+          <input type="tel" id="phone" placeholder="☎️" />
+        </div>
+
+        <div>
+          <label class="screen-reader-text" for="uname">Username:</label>
+          <input type="text" id="uname" placeholder="Username" />
+          <p class="is-hidden">Username is required!</p>
+        </div>
+
+        <div>
+          <label class="screen-reader-text" for="password">Password:</label>
+          <input type="password" id="password" placeholder="Password" />
+        </div>
+
+        <div class="flex flex--align-center flex--justify-between">
+          <button type="submit">Register!</button>
+          <button id="toggle-btn" type="button">
+            Already have an account?
+          </button>
+        </div>
+      </form>
+    </section>
+    <script src="./scripts.js" type="module"></script>
+  </body>
+</html>
