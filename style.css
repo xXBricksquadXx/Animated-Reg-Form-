@@ -58,13 +58,31 @@
   }
 }
 
-.resume #text {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  margin-right: 75px;
-  padding-right: 50px;
+.container {
+  height: 300px;
+  margin: 240px auto;
   position: relative;
-  text-align: center;
+  width: 1200px;
+}
+.container .box {
+  background: #ff0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  float: left;
+  height: calc(300px - 30px);
+  margin: 15px;
+  overflow: hidden;
+  position: relative;
+  width: calc(400px - 30px);
+}
+
+.container .box .icon {
+  background: #f00;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 section {
