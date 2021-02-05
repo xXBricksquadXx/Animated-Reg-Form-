@@ -130,6 +130,10 @@ section div {
 input {
   padding: 2px;
 }
+input + p {
+  color: red;
+  margin: 4px 0 0 0;
+}
 
 input,
 button {
@@ -221,10 +225,19 @@ button:hover {
 }
 
 /* JS 'State' Classes */
+.is-error {
+  border: solid thin red;
+  color: red;
+}
+
 .is-hidden {
   display: none;
 }
 
+.is-valid {
+  border: solid 2px green;
+}
+
 .is-visible {
-  display: initial;
+  display: block;
 }
